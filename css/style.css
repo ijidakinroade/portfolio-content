@@ -1,0 +1,50 @@
+.nav_bar{
+
+}
+
+.button_style{
+  border: solid black;
+  padding: 20px 50px 20px 50px;
+  background-color: grey;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.current_page{
+  border: solid black;
+  padding: 20px 50px 20px 50px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.nav_bar{
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  padding: 15px;
+  gap: 10px;
+}
+
+.jump_to_content{
+  display: none;
+}
+
+.normal_img{
+  width: 450px;
+  border: 5px solid grey;
+  margin: 15px;
+  padding: 10px;
+}
+
+.normal_img:hover{
+  opacity:0.5;
+}
