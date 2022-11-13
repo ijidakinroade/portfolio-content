@@ -11,6 +11,7 @@
   text-align: center;
   text-transform: uppercase;
   color: black;
+
 }
 
 .current_page{
@@ -22,6 +23,7 @@
   text-align: center;
   text-transform: uppercase;
   color: black;
+
 }
 
 
@@ -32,6 +34,7 @@
   background-color: grey;
   padding: 15px;
   gap: 10px;
+  max-width: 100%;
 }
 
 .jump_to_content{
@@ -47,4 +50,64 @@
 
 .normal_img:hover{
   opacity:0.5;
+}
+
+body{
+  font-family: 'Space Mono', monospace;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px;
+  font-size: 30px;
+  color:black;
+
+}
+
+.item1{
+  grid-row: 1;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.item2{
+  grid-row: 2;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.item3{
+  grid-row: 3;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.item4{
+  grid-row: 4;
+  max-width: 100%;
+  padding: 20px;
+}
+
+
+.gallery_section{
+  background-image: url("../images/background.png");
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+  gap: 10px;
+
+}
+
+
+#fade_header{
+  animation: fadeIn 4s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100%{opacity:1;}
+}
+
+
+@media (prefers-reduced-motion) {
+   #fade_header {animation: none;}
 }

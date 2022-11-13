@@ -5,6 +5,12 @@
     <title>Intersectionality</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2YHWDTJLH"></script>
 <script>
@@ -14,10 +20,10 @@
 
   gtag('config', 'G-S2YHWDTJLH');
 </script>
-
+  <script src="https://kit.fontawesome.com/bca8dcddff.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <header>
+      <header class="item1">
         <nav>
           <div class="nav_bar">
             <a href="index.html" class="button_style">Main Page</a>
@@ -32,11 +38,13 @@
 
 
 
-    <main>
+    <main class="item2">
 
-      <section>
+      <section class="gallery_section">
+        <!--This is where the logo is-->
+        <i class="fa-brands fa-free-code-camp"></i>
         <img src="images/japanese_art_sitting.jpeg" class="normal_img" alt="Japanese art depicting someone sitting down.">
-        <h1>Worldwide Similarities</h1>
+        <h1 id="fade_header">Worldwide Similarities</h1>
         <p>
           While the world’s culture’s are incredibly diverse and almost countless, there will always remain similarities across countless topics, with art being one of them. As we
           Are focusing on African sculpture for this lesson, we’ll be explaining the commonalities and differences between African sculpture and how sculpture was viewed in other traditional
@@ -55,7 +63,33 @@
 
     </main>
 
-    <footer></footer>
+
 
   </body>
+
+  <aside class="item3">
+  <form
+       action="https://formspree.io/f/xyyvblby"
+       method="POST"
+     >
+       <label>
+         Your email:
+         <input type="email" name="email">
+       </label>
+       <label>
+         Your message:
+         <textarea name="message"></textarea>
+       </label>
+       <!-- your other form fields go here -->
+       <button type="submit">Send</button>
+ </form>
+</aside>
+
+<footer class="item4">
+
+<h1>Contact us for more information on LinkedIn or Facebook</h1>
+</footer>
+
+
+
 </html>

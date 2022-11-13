@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2YHWDTJLH"></script>
   <script>
@@ -15,30 +19,33 @@
 
     gtag('config', 'G-S2YHWDTJLH');
   </script>
+  <script src="https://kit.fontawesome.com/bca8dcddff.js" crossorigin="anonymous"></script>
   </head>
 
 
+  <header class="item1">
+    <nav>
+      <div class="nav_bar">
+        <a href="index.html" class="button_style">Main Page</a>
+        <a href="intersectionality_page.html" class="button_style">Intersectionality</a>
+        <a href="gallery_page.html" class="button_style">Gallery</a>
+        <a href="history_page.html" class="current_page">History</a>
+      </div>
+      <a href="main" class="jump_to_content">Jump to Content</a>
+    </nav>
+  </header>
 
+  <body class="item2">
 
-  <body>
-    <header>
-      <nav>
-        <div class="nav_bar">
-          <a href="index.html" class="button_style">Main Page</a>
-          <a href="intersectionality_page.html" class="button_style">Intersectionality</a>
-          <a href="gallery_page.html" class="button_style">Gallery</a>
-          <a href="history_page.html" class="current_page">History</a>
-        </div>
-        <a href="main" class="jump_to_content">Jump to Content</a>
-      </nav>
-    </header>
 
     <main>
-      <section>
+      <section class="gallery_section">
+        <!--This is where the logo is-->
+        <i class="fa-brands fa-free-code-camp"></i>
         <img src="images/african_art_body.jpeg"  class="normal_img" alt="African art of depicting a
         whole body.">
-        <h1>The History</h1>
-        <p>The history of traditional African sculpture reveals a level of individuality and spirituality uncommon in comparison to today’s modern. Many
+        <h1 id="fade_header">The History</h1>
+        <p class="fade_header">The history of traditional African sculpture reveals a level of individuality and spirituality uncommon in comparison to today’s modern. Many
           Traditional sculpture utilized numerous mediums to bring for the the vision of the artist. While traditional sculpting is normally done with either stone, clay or wood,
           Clay was the main medium for African sculpture. Beyond the mediums prorated within African sculpture, a huge theme seen within these sculptures is: figurative.</p>
         <p>Much of African sculpture primarily is figurative and additionally religious or spiritual in nature. Artists often hone in on exaggerating or play down certain features to communicate
@@ -48,7 +55,28 @@
       </section>
     </main>
 
-    <footer></footer>
+
 
   </body>
+
+  <aside class="item3">
+  <form
+       action="https://formspree.io/f/xyyvblby"
+       method="POST"
+     >
+       <label>
+         Your email:
+         <input type="email" name="email">
+       </label>
+       <label>
+         Your message:
+         <textarea name="message"></textarea>
+       </label>
+       <!-- your other form fields go here -->
+       <button type="submit">Send</button>
+  </form>
+  </aside>
+
+  <footer class="item4"><h1>Contact us for more information on LinkedIn or Facebook</h1></footer>
+
 </html>

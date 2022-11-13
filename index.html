@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2YHWDTJLH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,11 +18,12 @@
 
       gtag('config', 'G-S2YHWDTJLH');
     </script>
+    <script src="https://kit.fontawesome.com/bca8dcddff.js" crossorigin="anonymous"></script>
   </head>
   <!-- Google tag (gtag.js) -->
 
   <body>
-      <header>
+      <header class="item1">
             <nav>
               <div class="nav_bar">
                 <a href="index.html" class="current_page">Main Page</a>
@@ -31,10 +36,12 @@
       </header>
 
 
-    <main>
-      <section>
+    <main class="item2">
+      <section class="gallery_section">
+        <!--This is where the logo is-->
+        <i class="fa-brands fa-free-code-camp"></i>
         <img src="images/african_art_mask1.jpeg" class="normal_img" alt="An African Mask on display.">
-        <h1>The Idea</h1>
+        <h1 id="fade_header">The Idea</h1>
         <p>
             Recently with the advent of social media and more a more digitized medium in regards to consuming art, the value of the statue has been forgotten
             To a large subsection of the population. People seem to be interested in what’s on their phone instead of what’s infront of them.
@@ -43,7 +50,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="gallery_section">
         <h1>Ube's Waiting Room</h1>
         <p>
             Welcome to Ube’s Waiting Room - a website dedicated to explaining the complexities of sculpture specifically within Africa, Latin America and Asia culture.
@@ -57,25 +64,30 @@
             Please traverse this page to find out more about the intersection of gender roles, societal standards, and examples of these other traits in other cultures as well.     
          </p>
 
-         <form
-              action="https://formspree.io/f/xyyvblby"
-              method="POST"
-            >
-              <label>
-                Your email:
-                <input type="email" name="email">
-              </label>
-              <label>
-                Your message:
-                <textarea name="message"></textarea>
-              </label>
-              <!-- your other form fields go here -->
-              <button type="submit">Send</button>
-        </form>
+
+
       </section>
     </main>
 
-    <footer></footer>
+    <aside class="item3">
+    <form
+         action="https://formspree.io/f/xyyvblby"
+         method="POST"
+       >
+         <label>
+           Your email:
+           <input type="email" name="email">
+         </label>
+         <label>
+           Your message:
+           <textarea name="message"></textarea>
+         </label>
+         <!-- your other form fields go here -->
+         <button type="submit">Send</button>
+   </form>
+ </aside>
+
+    <footer class="item4"></footer>
 
   </body>
 </html>
