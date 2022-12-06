@@ -111,3 +111,61 @@ body{
 @media (prefers-reduced-motion) {
    #fade_header {animation: none;}
 }
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .current_page{
+    padding: 10px 25px 5px 25px;
+    font-size: 15px;
+  }
+
+  .button_style{
+    padding: 10px 25px 5px 25px;
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .current_page{
+    padding: 10px 25px 5px 25px;
+    font-size: 15px;
+  }
+
+  .button_style{
+    padding: 10px 25px 5px 25px;
+    font-size: 15px;
+  }
+
+  .gallery_section{
+    flex-direction: column-reverse;
+
+  }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .current_page{
+    padding: 10px 25px 5px 25px;
+    font-size: 10px;
+  }
+
+  .button_style{
+    padding: 10px 25px 5px 25px;
+    font-size: 10px;
+}
+
+.gallery_section{
+
+}
+
+
+}
