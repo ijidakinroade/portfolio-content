@@ -4,10 +4,10 @@
 
 .button_style{
   border: solid black;
-  padding: 20px 50px 20px 50px;
+  padding: 10px 25px 5px 25px;
   background-color: grey;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 10px;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -16,10 +16,10 @@
 
 .current_page{
   border: solid black;
-  padding: 20px 50px 20px 50px;
+  padding: 10px 25px 5px 25px;
   background-color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 10px;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -79,6 +79,7 @@ body{
   grid-row: 3;
   max-width: 100%;
   padding: 20px;
+  background-color: grey.
 }
 
 .item4{
@@ -91,7 +92,8 @@ body{
 .gallery_section{
   background-image: url("../images/background.png");
   display:flex;
-  flex-direction: column;
+
+  flex-direction: column-reverse;
   align-items:stretch;
   gap: 10px;
 
@@ -113,59 +115,46 @@ body{
 }
 
 
-
-@media only screen and (max-width: 1300px) {
+/*Tablet Media Query*/
+@media screen and (min-width: 801px) {
 
   .current_page{
-    padding: 10px 25px 5px 25px;
-    font-size: 15px;
-  }
+      padding: 10px 25px 5px 25px;
+      font-size: 15px;
+    }
 
-  .button_style{
-    padding: 10px 25px 5px 25px;
-    font-size: 15px;
-  }
+    .button_style{
+      padding: 10px 25px 5px 25px;
+      font-size: 15px;
+    }
+
+    .gallery_section{
+      flex-direction: column;
+    }
+
+
+
 }
 
 
-@media only screen and (max-width: 768px) {
+/*Desktop Media Query*/
+@media screen and (min-width: 1280px) {
+
 
   .current_page{
-    padding: 10px 25px 5px 25px;
-    font-size: 15px;
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
   }
 
   .button_style{
-    padding: 10px 25px 5px 25px;
-    font-size: 15px;
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
   }
 
   .gallery_section{
-    flex-direction: column-reverse;
+    flex-direction: column;
 
   }
-
-
-
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-  .current_page{
-    padding: 10px 25px 5px 25px;
-    font-size: 10px;
-  }
-
-  .button_style{
-    padding: 10px 25px 5px 25px;
-    font-size: 10px;
-}
-
-.gallery_section{
-
-}
 
 
 }
